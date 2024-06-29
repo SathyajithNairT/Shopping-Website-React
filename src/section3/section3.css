@@ -1,0 +1,177 @@
+.section3MainWrap {
+    font-family: sans-serif;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainHeading {
+    font-size: 2rem;
+    width: 67%;
+    text-align: center;
+    position: relative;
+}
+
+.mainHeading::before,
+.mainHeading::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    background-color: rgb(197, 193, 193);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mainHeading::before {
+    left: 0;
+    right: 60%;
+}
+
+.mainHeading::after {
+    right: 0;
+    left: 60%;
+}
+
+.subHeading {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    color: gray;
+    margin-bottom: 4rem;
+}
+
+.contentWrap {
+    /* background-color: aqua; */
+    height: auto;
+    width: 67%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgWrap {
+    /* background-color: antiquewhite; */
+    height: 100%;
+    width: 18%;
+    position: relative;
+}
+
+.contentImg {
+    height: 80%;
+    width: 100%;
+}
+
+.section3NewFlag {
+    position: absolute;
+    top: 7%;
+    right: 0;
+    background-color: rgba(188, 130, 70, 255);
+    color: white;
+    width: 35%;
+    height: 9%;
+    font-size: 0.7rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    transform: rotate(90deg);
+    clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%);
+}
+
+.section3OfferFlag {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    background-color: black;
+    color: white;
+    width: 35%;
+    height: 8.6%;
+    font-size: 0.8rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    transform: rotate(90deg);
+    clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%);
+}
+
+.section3ProductName {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+}
+
+.section3Price {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(56, 53, 53);
+}
+
+.section3PrevPrice {
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 0.5rem;
+}
+
+.section3LogoWrap {
+    width: 67%;
+    height: 100%;
+    padding: 5% 0;
+    /* background-color: aqua; */
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section3LogoSubWrap {
+    height: 100%;
+    width: 18%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    align-items: center;
+}
+
+.section3Logo {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1200px){
+    .section3NewFlag{
+        display: none;
+    }
+
+    .section3OfferFlag{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .contentWrap{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgWrap{
+        width: 60%;
+        margin-bottom: 2rem;
+    }
+
+    .section3ProductName{
+        font-size: 2rem;
+    }
+    .section3Price{
+        font-size: 2.5rem;
+    }
+
+    .section3LogoWrap{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section3LogoSubWrap{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .section3Logo{
+        width: 70%;
+    }
+}

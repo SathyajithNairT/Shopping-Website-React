@@ -1,0 +1,107 @@
+.section4MainWrap{
+    height: auto;
+    padding: 2% 0;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-family: sans-serif;
+    flex-direction: column;
+}
+
+.section4MainHeading{
+    font-size: 2rem;
+    width: 67%;
+    text-align: center;
+    position: relative;
+}
+
+.section4MainHeading::before,
+.section4MainHeading::after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1px;
+    background-color: gray;
+}
+
+.section4MainHeading::before{
+    left: 0;
+    right: 65%;
+}
+
+.section4MainHeading::after{
+    right: 0;
+    left: 65%;
+}
+
+.section4SubHeading{
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.section4ContentWrap{
+    /* background-color: aqua; */
+    height: auto;
+    width: 67%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section4ImgWrap{
+    height: 100%;
+    width: 30%;
+    color: grey;
+    /* background-color: antiquewhite; */
+}
+
+.section4Img{
+    width: 100%;
+}
+
+.section4ProductName{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.section4BlogAuthor{
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.authorName{
+    color: rgba(188,130,70,255);
+}
+
+.section4ProductDescription{
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.section4Btn{
+    width: 10rem;
+    height: 2.5rem;
+    background-color: transparent;
+    border: 2px solid gray;
+    color: rgb(63, 61, 61);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width: 1000px){
+    .section4ContentWrap{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section4ImgWrap{
+        width: 60%;
+        color: grey;
+        margin-bottom: 2rem;
+    }
+}

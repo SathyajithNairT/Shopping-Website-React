@@ -1,0 +1,135 @@
+
+
+.carouselContentWrap{
+    /* background-color: rgba(245,245,245,255);     */
+    height: 55rem; 
+    position: relative;
+    /* background-color: aqua; */
+}
+
+.carouselImage{
+    height: 70%;
+    width: 100%;
+    display: block;
+}
+
+.carouselNavigationWrap{
+    height: 25%;
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, 5%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    font-size: 1rem;
+    /* background-color: rgb(215, 128, 15); */
+}
+
+.carouselNavigationContent{
+    height: 74%;
+    width: 30%;
+    background-color: white;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.carouselNavigationContentImage{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carouselWordings{
+    position: absolute;
+    top: 20%;
+    left: 11.5%;
+    font-family: sans-serif;
+}
+
+.carouselCaption{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.carouselDescription{
+    width: 22rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    font-size: 0.8rem;
+}
+
+.carouselBtn{
+    height: 2.5rem;
+    width: 50%;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.carouselWordingsNavigation{
+    position: absolute;
+    top: 20%;
+    left: 6%;
+    font-family: sans-serif;
+}
+
+.carouselCaptionNavigation{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.carouselBtnWrapNavigation{
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+
+
+
+@media screen and (max-width: 1000px){
+    .carouselContentWrap{
+        height: 50rem;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .carouselContentWrap{
+        height: 47rem;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .carouselContentWrap{
+        height: 45rem;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .carouselContentWrap{
+        height: 45rem;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .carouselContentWrap{
+        height: 40rem;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .carouselContentWrap{
+        height: 35rem;
+    }
+}
+
+
+@media screen and (max-width: 470px){
+    .carouselContentWrap{
+        height: 50rem;
+    }
+}
